@@ -3,7 +3,6 @@ package com.wnotice.libworkthreex.lib.image;
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
 import android.graphics.PointF;
-import android.util.FloatMath;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
@@ -159,7 +158,7 @@ public class TouchScreenImg implements OnTouchListener {
 			float y = event.getY(0) - event.getY(1); 
 			
 			//Log.d("onTouch spacing", FloatMath.sqrt(x * x + y * y)+"");
-			return FloatMath.sqrt(x * x + y * y);  
+			return (float)Math.sqrt(x * x + y * y);
 		}  
 		  
 		/** Calculate the mid point of the first two fingers */  

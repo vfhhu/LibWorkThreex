@@ -1,13 +1,12 @@
 package com.wnotice.libworkthreex.lib.UI.Alert;
 
 
-
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.widget.TextView;
 
-import com.example.__threex_lib.R;
+import com.wnotice.libworkthreex.R;
+
 
 public class AlertProgressBar {
 	Activity act;

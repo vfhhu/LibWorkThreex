@@ -8,7 +8,7 @@ android {
     buildToolsVersion "22.0.1"
     resourcePrefix "libworkthreex__"
     defaultConfig {
-        applicationId "com.wnotice.libworkthreex"
+        //applicationId "com.wnotice.libworkthreex"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
@@ -31,6 +31,7 @@ dependencies {
 }
 def siteUrl = 'https://github.com/vfhhu/LibWorkThreex'      // 项目的主页
 def gitUrl = 'https://github.com/vfhhu/LibWorkThreex.git'   // Git仓库的url
+group = "com.wnotice.libworkthreex"
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
