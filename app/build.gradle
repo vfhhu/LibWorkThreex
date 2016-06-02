@@ -76,6 +76,10 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
 }
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
 artifacts {
     archives javadocJar
     archives sourcesJar
